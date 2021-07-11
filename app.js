@@ -3,7 +3,7 @@ import morgan from 'morgan'
 import mongoose from 'mongoose'
 import { config } from 'dotenv'
 
-import api from './lib/router'
+import routes from './lib/routes'
 
 config()
 const app = express()
@@ -15,4 +15,4 @@ mongoose.connect(process.env.DB_URL, {useNewUrlParser: true, useUnifiedTopology:
 
 app.use(morgan('dev'))
 app.use(express.urlencoded({ extended: true }))
-app.use('/api', api)
+app.use('/api', routes)
