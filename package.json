@@ -1,13 +1,14 @@
 {
-  "name": "myapp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "name": "blogerino",
+  "version": "0.0.1",
+  "description": "mern stack practice",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec babel-node index.js",
+    "test": "jest"
   },
-  "author": "",
+  "author": "systemplado",
+  "repository": "https://www.github.com/systemplado/blogerino",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
@@ -19,6 +20,8 @@
     "@babel/core": "^7.14.6",
     "@babel/node": "^7.14.7",
     "@babel/preset-env": "^7.14.7",
-    "nodemon": "^2.0.10"
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.10",
+    "supertest": "^6.1.3"
   }
 }
