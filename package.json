@@ -2,9 +2,9 @@
   "name": "blogerino",
   "version": "0.0.1",
   "description": "mern stack practice",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node app.js",
+    "start": "nodemon --exec babel-node index.js",
     "test": "jest"
   },
   "author": "systemplado",
