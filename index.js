@@ -1,7 +1,8 @@
+import { config } from 'dotenv'
 import express from 'express'
+import cookieParser from 'cookie-parser'
 import morgan from 'morgan'
 import mongoose from 'mongoose'
-import { config } from 'dotenv'
 
 import routes from './lib/routes'
 
@@ -21,4 +22,5 @@ mongoose.connect(process.env.DB_URL, mongo_opts)
 app.use(morgan('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(cookieParser())
 app.use('/api', routes)
