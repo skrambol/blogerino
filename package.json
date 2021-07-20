@@ -6,7 +6,10 @@
   "scripts": {
     "start": "nodemon --exec babel-node index.js",
     "test": "jest -i",
-    "test:watch": "jest -i --watch"
+    "test:watch": "jest -i --watch",
+    "coverage": "jest -i --coverage",
+    "lint": "eslint lib/**",
+    "lint:fix": "eslint lib/** --fix"
   },
   "author": "systemplado",
   "repository": "https://www.github.com/systemplado/blogerino",
@@ -26,6 +29,8 @@
     "@babel/node": "^7.14.7",
     "@babel/plugin-transform-runtime": "^7.14.5",
     "@babel/preset-env": "^7.14.7",
+    "eslint": "^7.31.0",
+    "eslint-plugin-jest": "^24.3.6",
     "jest": "^27.0.6",
     "nodemon": "^2.0.10",
     "supertest": "^6.1.3"
